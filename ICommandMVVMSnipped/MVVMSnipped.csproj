@@ -13,8 +13,8 @@
     <ProjectGuid>{65EAE8AF-552C-4D0B-B12C-D28323FF45A1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ICommandMVVMSnipped</RootNamespace>
-    <AssemblyName>ICommandMVVMSnipped</AssemblyName>
+    <RootNamespace>MVVMSnipped</RootNamespace>
+    <AssemblyName>MVVMSnipped</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
