@@ -1,0 +1,42 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <Header>
+        <Title>Singleton</Title>
+        <Author>Cristian Keisz</Author>
+        <Shortcut>singleton</Shortcut>
+        <Description>Add a Singletone</Description>
+        <SnippetTypes>
+            <SnippetType>Expansion</SnippetType>
+        </SnippetTypes>
+    </Header>
+    <Snippet>
+        <Declarations>            
+            <Literal>
+                <ID>name</ID>
+                <ToolTip>The name of singleton</ToolTip>
+                <Default>Singleton</Default>
+            </Literal>
+        </Declarations>
+        <Code Language="CSharp">
+            <![CDATA[public class $name$
+    {
+
+        private $name$() { }
+
+        private static $name$ _instance = null;
+
+        public static $name$ getInstance()
+        {
+            if (_instance == null)
+            {
+                _instance = new $name$();
+            }
+            return _instance;
+        }
+
+        /****/
+
+    }
+    $end$]]>
+        </Code>
+    </Snippet>
+</CodeSnippet>

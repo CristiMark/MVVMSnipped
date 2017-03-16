@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICommandMVVMSnipped", "ICommandMVVMSnipped\ICommandMVVMSnipped.csproj", "{65EAE8AF-552C-4D0B-B12C-D28323FF45A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMSnipped", "ICommandMVVMSnipped\MVVMSnipped.csproj", "{65EAE8AF-552C-4D0B-B12C-D28323FF45A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EABA42B9-5865-4337-8C53-61197C861CD4}"
+	ProjectSection(SolutionItems) = preProject
+		CHANGELOG.md = CHANGELOG.md
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

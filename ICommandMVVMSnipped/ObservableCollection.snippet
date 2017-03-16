@@ -1,0 +1,47 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <Header>
+        <Title>obscoll</Title>
+        <Author>Cristian Keisz</Author>
+        <Shortcut>obscoll</Shortcut>
+        <Description>Add Observable Collection Faster to your mvvm</Description>
+        <SnippetTypes>
+            <SnippetType>Expansion</SnippetType>
+        </SnippetTypes>
+    </Header>
+    <Snippet>
+        <Declarations>
+            <Literal>
+                <ID>Type</ID>
+                <ToolTip>Type of ObservableCollection</ToolTip>
+                <Default>int</Default>
+            </Literal>
+            <Literal>
+                <ID>name</ID>
+                <ToolTip>The ObservableCollection name</ToolTip>
+                <Default>ObservableCollectionName</Default>
+            </Literal>
+          <Literal>
+            <ID>nameProp</ID>
+            <ToolTip>The varable namename</ToolTip>
+            <Default>_ObservableCollectionName</Default>
+          </Literal>
+        </Declarations>
+        <Code Language="CSharp">
+            <![CDATA[#region ObservableCollection $name$
+                private ObservableCollection<$Type$> $nameProp$; 
+                public ObservableCollection<$Type$> $name$
+                {
+                    get
+                    {
+                        return $nameProp$;
+                    }
+                    set
+                    {
+                        $nameProp$ = value;
+                        RaisePropertyChanged("$name$");
+                    }
+                }
+        #endregion$end$]]>
+        </Code>
+    </Snippet>
+</CodeSnippet>

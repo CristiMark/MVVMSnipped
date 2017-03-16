@@ -1,0 +1,54 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <Header>
+        <Title>ICommand C#</Title>
+        <Author>Cristian Keisz</Author>
+        <Shortcut>icomm</Shortcut>
+        <Description>Add ICommand Faster to your mvvm</Description>
+        <SnippetTypes>
+            <SnippetType>Expansion</SnippetType>
+        </SnippetTypes>
+    </Header>
+    <Snippet>
+        <Declarations>
+            <Literal>
+                <ID>propName</ID>
+                <ToolTip>The varable name</ToolTip>
+                <Default>_ICommandName</Default>
+            </Literal>
+            <Literal>
+                <ID>name</ID>
+                <ToolTip>The name of ICommand</ToolTip>
+                <Default>ICommandName</Default>
+            </Literal>
+        </Declarations>
+        <Code Language="CSharp">
+            <![CDATA[#region ICommand $name$
+                private ICommand $propName$; 
+                public ICommand $name$
+                {
+                    get
+                    {
+                        if ($propName$ == null)
+                        {
+                            $propName$ = new DelegateCommand($name$Execute); // RelayCommand
+                        }
+                        return $propName$;
+                    }
+                }
+                private void $name$Execute()
+                {
+                    Mouse.OverrideCursor = System.Windows.Input.Cursors.Wait;
+                    try {
+                        /*
+                            *****
+                        */
+                    } catch (Exception ex) {
+                        MessageBox.Show("Exception found on $name$Execute :" + ex.Message);
+                    }
+                    Mouse.OverrideCursor = System.Windows.Input.Cursors.Arrow;
+                }
+        #endregion
+        ]]>
+        </Code>
+    </Snippet>
+</CodeSnippet>
