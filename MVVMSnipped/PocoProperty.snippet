@@ -1,0 +1,28 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <Header>
+        <Title>PocoProprety</Title>
+        <Author>Cristian Keisz</Author>
+        <Shortcut>pocoprop</Shortcut>
+        <Description>PocoProprety</Description>
+        <SnippetTypes>
+            <SnippetType>Expansion</SnippetType>
+        </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>Type</ID>
+          <ToolTip>Type of Poco Proprety</ToolTip>
+          <Default>int</Default>
+        </Literal>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>The Poco Proprety name</ToolTip>
+          <Default> Poco Proprety</Default>
+        </Literal>        
+      </Declarations>
+      <Code Language="CSharp">
+            <![CDATA[public virtual $Type$ $name$ { get; set; };$end$]]>
+        </Code>
+    </Snippet>
+</CodeSnippet>

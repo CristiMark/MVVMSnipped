@@ -44,6 +44,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="PocoProperty.snippet" />
     <None Include="Singleton.snippet" />
     <None Include="ObservableCollection.snippet" />
     <None Include="ICommand.snippet" />
